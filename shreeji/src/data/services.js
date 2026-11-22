@@ -1,5 +1,5 @@
 import skincare from './../assets/images/skincare.jpg'
-import haircare from './../assets/images/haircare.jpg'
+import haircare from './../assets/images/HairCare.jpg'
 import bridal from './../assets/images/Bridalmakeup.jpg'
 import softparty from './../assets/images/Softmakeup.jpg'
 import waxing from './../assets/images/WaxingThreading.jpg'
