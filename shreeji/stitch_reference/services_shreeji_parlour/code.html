@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Shreeji Parlour</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'rose-gold': '#B76E79',
+        'blush-tint': '#F9E6E8',
+        'warm-beige': '#EFE6DD',
+        'success': '#2E6F40',
+        'warning': '#9A6700',
+        'light-primary': '#431830',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#5D2E46',
+        'light-on-primary-container': '#FFD8E7',
+        'light-secondary': '#8C4B55',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#FFECED',
+        'light-on-secondary-container': '#551E29',
+        'light-tertiary': '#7D562D',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFEEE0',
+        'light-on-tertiary-container': '#482904',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FDF9F5',
+        'light-on-background': '#1C1C19',
+        'light-surface': '#FDF9F5',
+        'light-surface-dim': '#DDD9D6',
+        'light-surface-bright': '#FDF9F5',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F7F3EF',
+        'light-surface-container': '#F1EDE9',
+        'light-surface-container-high': '#EBE7E4',
+        'light-surface-container-highest': '#E5E2DE',
+        'light-on-surface': '#1C1C19',
+        'light-surface-variant': '#F1DEE4',
+        'light-on-surface-variant': '#504348',
+        'light-outline': '#827378',
+        'light-outline-variant': '#D4C2C8',
+        'light-inverse-surface': '#31302E',
+        'light-inverse-on-surface': '#F4F0EC',
+        'light-inverse-primary': '#F6B4D1',
+        'dark-primary': '#F6B4D1',
+        'dark-on-primary': '#4E2139',
+        'dark-primary-container': '#5D2E46',
+        'dark-on-primary-container': '#FFD8E7',
+        'dark-secondary': '#FFB2BC',
+        'dark-on-secondary': '#551E29',
+        'dark-secondary-container': '#733641',
+        'dark-on-secondary-container': '#FFD9DD',
+        'dark-tertiary': '#F0BD8B',
+        'dark-on-tertiary': '#482904',
+        'dark-tertiary-container': '#58360F',
+        'dark-on-tertiary-container': '#FFDCBD',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#141311',
+        'dark-on-background': '#E5E2DE',
+        'dark-surface': '#141311',
+        'dark-surface-dim': '#141311',
+        'dark-surface-bright': '#3A3937',
+        'dark-surface-container-lowest': '#0F0E0C',
+        'dark-surface-container-low': '#1C1C19',
+        'dark-surface-container': '#20201D',
+        'dark-surface-container-high': '#2B2A28',
+        'dark-surface-container-highest': '#363532',
+        'dark-on-surface': '#E5E2DE',
+        'dark-surface-variant': '#504348',
+        'dark-on-surface-variant': '#D4C2C8',
+        'dark-outline': '#9C8D92',
+        'dark-outline-variant': '#504348',
+        'dark-inverse-surface': '#E5E2DE',
+        'dark-inverse-on-surface': '#31302E',
+        'dark-inverse-primary': '#834E68',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-sm': '48px',
+        'section-lg': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Playfair Display"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'title': ['"Raleway"', 'sans-serif'],
+        'body': ['"Raleway"', 'sans-serif'],
+        'label': ['"Raleway"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['56px', { lineHeight: '64px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'display-md': ['44px', { lineHeight: '52px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-sm': ['22px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'body-lg': ['17px', { lineHeight: '28px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.15px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.25px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.4px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.5px', fontWeight: '600' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '180ms',
+        'surface-enter': '300ms',
+        'card-hover': '240ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'card-hover': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.22, 1, 0.36, 1)',
+        'card-hover': 'cubic-bezier(0.22, 1, 0.36, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Raleway:wght@400;500;600;700&amp;family=Red+Hat+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased selection:bg-blush-tint selection:text-light-primary">
+  <div class="min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+    <!-- Shared Header -->
+    <header class="sticky top-0 z-40 border-b border-light-outline-variant bg-light-surface-container-lowest">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-gutter-md py-4 md:px-gutter-lg">
+        <a href="../home/Home.html" class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-[26px] text-rose-gold" aria-hidden="true">spa</span>
+          <span class="font-headline text-headline-sm text-light-primary" data-design-text-token="headline-sm">Shreeji Parlour</span>
+        </a>
+
+        <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-7">
+          <a href="../home/Home.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-design-text-token="label-lg">Home</a>
+          <a href="../about-us/AboutUs.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-design-text-token="label-lg">About Us</a>
+          <a href="../services/Services.html" class="font-label text-label-lg text-light-primary border-b-2 border-rose-gold pb-0.5" data-design-text-token="label-lg">Services</a>
+          <a href="../packages/PackagesPricing.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-design-text-token="label-lg">Packages</a>
+          <a href="../gallery/Gallery.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-design-text-token="label-lg">Gallery</a>
+          <a href="../contact-us/ContactUs.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-design-text-token="label-lg">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="../book-appointment/BookAppointment.html" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="hidden sm:inline-flex items-center justify-center gap-2 rounded-full bg-light-primary px-6 py-2.5 text-light-on-primary shadow-sm transition-colors duration-state-change ease-state-change hover:bg-light-primary-container">
+            <span class="font-label text-label-lg" data-design-text-token="label-lg">Book Appointment</span>
+          </a>
+          <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" class="inline-flex lg:hidden h-10 w-10 items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest text-light-on-surface hover:bg-blush-tint">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">menu</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-t border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-4 lg:hidden">
+        <nav class="flex flex-col gap-3" aria-label="Mobile Navigation">
+          <a href="../home/Home.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-design-text-token="label-lg">Home</a>
+          <a href="../about-us/AboutUs.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-design-text-token="label-lg">About Us</a>
+          <a href="../services/Services.html" class="font-label text-label-lg text-light-primary py-1.5" data-design-text-token="label-lg">Services</a>
+          <a href="../packages/PackagesPricing.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-design-text-token="label-lg">Packages</a>
+          <a href="../gallery/Gallery.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-design-text-token="label-lg">Gallery</a>
+          <a href="../contact-us/ContactUs.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-design-text-token="label-lg">Contact</a>
+          <a href="../book-appointment/BookAppointment.html" class="mt-2 inline-flex items-center justify-center rounded-full bg-light-primary px-6 py-3 font-label text-label-lg text-light-on-primary" data-design-text-token="label-lg">Book Appointment</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- Page Header -->
+      <section class="bg-light-surface-container-low py-section-sm">
+        <div class="mx-auto max-w-7xl px-gutter-md md:px-gutter-lg">
+          <span class="font-label text-label-md uppercase tracking-widest text-light-secondary" data-design-text-token="label-md">Treatment Menu</span>
+          <h1 class="mt-2 font-display text-display-md-mobile lg:text-display-md text-light-primary text-balance" data-design-text-token="display-md">Our Beauty &amp; Self-Care Services</h1>
+          <p class="mt-3 max-w-2xl font-body text-body-lg text-light-on-surface-variant text-pretty" data-design-text-token="body-lg">
+            Explore our eight specialized categories. Sample durations and INR pricing are shown as editable placeholders.
+          </p>
+
+          <!-- Category Filters -->
+          <div id="service-filters" class="mt-8 flex flex-wrap items-center gap-2.5" role="group" aria-label="Filter services by category">
+            <button data-filter="all" data-component-id="chip-filter-selected" data-component-type="chip" data-component-variant="filter" aria-pressed="true" type="button" class="filter-chip inline-flex items-center justify-center rounded-full bg-light-primary px-4 py-2 text-light-on-primary transition-colors duration-state-change">
+              <span class="font-label text-label-md" data-design-text-token="label-md">All Services</span>
+            </button>
+            <button data-filter="skincare" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Skin Care &amp; Facial</span>
+            </button>
+            <button data-filter="haircare" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Hair Care &amp; Styling</span>
+            </button>
+            <button data-filter="bridal" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Bridal Makeup</span>
+            </button>
+            <button data-filter="party" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Party Makeup</span>
+            </button>
+            <button data-filter="waxing" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Waxing &amp; Threading</span>
+            </button>
+            <button data-filter="manipedi" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Manicure &amp; Pedicure</span>
+            </button>
+            <button data-filter="nailart" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Nail Art</span>
+            </button>
+            <button data-filter="bodycare" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" type="button" class="filter-chip inline-flex items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest px-4 py-2 text-light-on-surface hover:border-rose-gold hover:bg-blush-tint">
+              <span class="font-label text-label-md" data-design-text-token="label-md">Body Care</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="mx-auto max-w-7xl px-gutter-md py-section-sm md:px-gutter-lg lg:py-section-lg">
+        <div id="services-grid" class="grid grid-cols-1 gap-gutter-lg sm:grid-cols-2 lg:grid-cols-3 items-stretch">
+          <!-- 1. Skin Care & Facial -->
+          <article data-category="skincare" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrD8ozmgI17XrhXlouYqb4Xp-pp4MaZqmR-Ux09epvlXCRTgmmQISAh50t9d-bdMuXLN_Ft3eTL5jYuHKRR9zA6SnuEXUeKR7ruvckVrpQt051hwVIBpQds5NUVJ0nhvOENToTLW4beIo4id4FtBZ8xqFiPx6aqgpLG54S8t-5dcBcbKKKpnsboqgB8HoFQtOb599LfHlhwIfPuPIui32G7zNKBRmGXWfQHwBIgbLUdFlF-k_W3aBmHcN8I" alt="Botanical Radiance Facial" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Skin Care &amp; Facial</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Botanical Radiance Facial</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">60 mins • ₹1,800 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Deep pore cleansing, rose-water enzyme exfoliation, and lymphatic facial massage for lasting glow.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 2. Hair Care & Styling -->
+          <article data-category="haircare" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB-P0SPTilj37GYF0SkvrR_QDNoKoENz2NDc5vgfgU6LIgHAvK63boYtX4KNgRBGDZijwcli3OSXfbfKUL0ySTzktZaKZwnGqJRn2mEolI29jCSbOkXFQxbBpsZXXAwKQJoTfVGxCMDTUFAey8rqXs_uwcBuVQoaRKydtCBdxLz2E6TcJJP-6yUQJDAtVlBgYv_xSbyjGzPDwsLZaXg5HO7n_12NguGqvXX-y9XZq3W6f2PzxdMpQ" alt="Signature Haircut &amp; Blow-Dry" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Hair Care &amp; Styling</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Signature Cut &amp; Silk Blow-Dry</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">50 mins • ₹1,200 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Face-framing layers, nourishing wash, and frizz-free voluminous blow-dry styling.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 3. Bridal Makeup -->
+          <article data-category="bridal" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCFyp6qz5gdJqDkE3UtLGHkIH_VpDwPgf-H7ZlxcIJ0oXEoqovkD6g5fchD4prMMLQpBcH5ZqzpmrSvFqcce3-VbvYeBW66jmQ9JALceoTnTruMxwf_LBpKUBGWQ4lQMXZ-a1u1D9eQVYoXlwKJmXId53Nip0Kg92EmbQFWzk1HZco42dYwy9ky_N5cJc354ap8uov53HBFQoypg82JvM8G9cr4WC8wPwaEu-4wv6HTP2samyf9OyI" alt="HD Bridal Makeup Artistry" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Bridal Makeup</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">HD Bridal Makeup Artistry</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">3 hrs • ₹14,999 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Long-wear luminous bridal makeup with skin prep, lash styling, floral hairdo, and draping.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 4. Party Makeup -->
+          <article data-category="party" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBMOR4Jy-3GL4fnysTpdrUAcCfGr1nn1w93ALN6pu7IYflfBVKphUISOjNZnITeIrrro2PUGso6X0eUu8YV4dtwOAUa_503RuhSl5J2KYCxD61rLnuSx6lyqrvE8FRmdYR38B6GIA3qCBEGPW1Gs4J-VCN9CyvNRNA4b2mwAYRa16Chi4rdcweAFBpw4NfX_cPJS4CPzvEOA_eD9kkWGlvsFTQpsmKy9lDsulYVaAQD0SlzQBtH" alt="Soft Glam Party Makeup" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Party Makeup</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Soft-Glam Party Makeup</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">90 mins • ₹3,500 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Effortless evening radiance with soft rose-gold shimmer, sculpted brows, and hair styling.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 5. Waxing & Threading -->
+          <article data-category="waxing" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBPFxSpBQ_x9bwsJB2fsbhhdjCIfRl3cN2v1uvml-EMj_wiQ8GZExHJujUDlEvR00xIV6aM8x-Sn_qFR-fYix8M3z-t1_dOJEioyWThr5Lm9voj-CwqH-BojI4ycw3CtVLDk9VYd0WqHsBdOklBDCTo4xMpjUXGRLqL12z6K8GUcIQ9NrvZeQcGUNOlRLe4Vhb8OveNLTMSgrO0HMBtytP1Zc7mO9Q5gNT1y7GU7DmVsB5Gc3uJbBEEICpf" alt="Rica Waxing &amp; Brow Threading" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Waxing &amp; Threading</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Rica Waxing &amp; Brow Sculpting</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">45 mins • ₹950 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Gentle Italian Rica liposoluble wax for silky skin paired with precision eyebrow threading.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 6. Manicure & Pedicure -->
+          <article data-category="manipedi" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBwpLCX97dZZTFjn8_-zQ7O6FnKchjnFBb_CfogMAHCyUeYIT9VelYzFT1GpccufkuphZPwx7ZS-u3paHxURr5H_N98YXuUlrxA4rj7CyyEai2t6-8WDvaNDtW33XDYgx1kBLQYtaOVD3sCU59XWCbLmHLJTPJPY0iX2yiU74-SmCM02P5TpGv8czjWIt4AsCrfO1A1hHDJZVT2BpZM3bBtefePN6mbiXNOfDBg8-R15FrX6TGq8R-pnXxzpQ" alt="Rose Petal Spa Manicure &amp; Pedicure" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Manicure &amp; Pedicure</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Rose-Petal Spa Mani-Pedi</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">75 mins • ₹1,650 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Aromatic mineral soak, heel smoothing, shea butter massage, and sheer blush polish.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 7. Nail Art -->
+          <article data-category="nailart" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDcMogz3PdzCjhMkAke2DGT30pxxQr4TuTXbGvzL6ZN3bL-grsW7Znq67Hwj9V8ccBNEk2XZu-XWpq05AzrGft1lgdkwyKHouGbvxa4WF-HZjcJwC1MEEez6aapwkm4xqdJ2J-qT-ho4-hE6OiZFeRjt36zMZk9s2WcX9nq9USJmWipB0x2H0jKZAt3KoA-w2g2-QI5aV-a_0byhhvol9XnzSGueM0xxVpNeWeCZLcywmM" alt="Gel Extensions &amp; Rose Gold Nail Art" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Nail Art</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Gel Polish &amp; Rose-Gold Nail Art</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">60 mins • ₹1,400 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Chip-resistant gel manicure with French tips, pearl chrome, or delicate floral foil art.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+
+          <!-- 8. Body Care -->
+          <article data-category="bodycare" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="service-card flex flex-col justify-between overflow-hidden rounded-lg border border-light-outline-variant bg-light-surface-container-lowest shadow-sm">
+            <div>
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCUvTjHlJTQt0nODVcYAy3VyrnxzHLMfyXQCZ8-gtVh62-HAWWppKg8ZDxt8SYyxP2eU9-OOCP7U7cuMxhCvjSPlGJQyj_WNg4ErKhtNnl4tEDD126VdyZcSNgUAkAxL065usc9O_nT-HXOZ4lhh5C-p95Kn47t1CLsAwfVyY01WtF6G-MUEn54kfuYF3Huk2pOo2owQlZhIr-5xGCzS2MjFhr7SdGZwBtSbJ_cPXDOJqA" alt="Full Body Polishing &amp; Spa Ritual" class="aspect-[4/3] w-full object-cover">
+              <div class="p-gutter-lg">
+                <header class="mb-2">
+                  <span class="font-label text-label-sm uppercase tracking-wider text-light-secondary" data-design-text-token="label-sm">Body Care</span>
+                  <h2 class="mt-1 font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Rose Body Polishing</h2>
+                  <p class="mt-1 font-body text-body-sm text-light-secondary tabular-nums" data-design-text-token="body-sm">90 mins • ₹2,800 (Sample)</p>
+                </header>
+                <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Full-body gentle sugar scrub, de-tanning wrap, and deeply hydrating warm oil ritual.</p>
+              </div>
+            </div>
+            <footer class="flex items-center gap-3 border-t border-light-outline-variant px-gutter-lg py-4">
+              <a href="../service-details/ServiceDetails.html" class="inline-flex flex-1 items-center justify-center rounded-full border border-light-outline-variant px-4 py-2 font-label text-label-md text-light-primary hover:bg-blush-tint" data-design-text-token="label-md">View Details</a>
+              <a href="../book-appointment/BookAppointment.html" class="inline-flex flex-1 items-center justify-center rounded-full bg-light-primary px-4 py-2 font-label text-label-md text-light-on-primary hover:bg-light-primary-container" data-design-text-token="label-md">Book Now</a>
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="border-t border-light-outline-variant bg-light-surface-container-low text-light-on-surface">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-gutter-xl px-gutter-md py-12 md:grid-cols-2 md:px-gutter-lg lg:grid-cols-4">
+        <div class="flex flex-col gap-3">
+          <a href="../home/Home.html" class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[24px] text-light-secondary" aria-hidden="true">spa</span>
+            <span class="font-headline text-headline-sm text-light-primary" data-design-text-token="headline-sm">Shreeji Parlour</span>
+          </a>
+          <p class="font-body text-body-sm text-light-on-surface-variant text-pretty" data-design-text-token="body-sm">
+            A serene women&#39;s beauty atelier dedicated to thoughtful skincare, haircare, bridal artistry, and restorative self-care.
+          </p>
+          <div class="mt-2 flex items-center gap-3">
+            <a href="#" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest text-light-primary hover:bg-blush-tint">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"></path></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest text-light-primary hover:bg-blush-tint">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.6V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V11H7.5v3h2.8v8h3.2Z"></path></svg>
+            </a>
+            <a href="#" aria-label="WhatsApp" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest text-light-primary hover:bg-blush-tint">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">chat</span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-label text-label-lg text-light-primary mb-3" data-design-text-token="label-lg">Quick Links</h3>
+          <ul class="flex flex-col gap-2 font-body text-body-sm text-light-on-surface-variant">
+            <li><a href="../home/Home.html" class="hover:text-light-primary">Home</a></li>
+            <li><a href="../about-us/AboutUs.html" class="hover:text-light-primary">About Us</a></li>
+            <li><a href="../our-team/OurTeam.html" class="hover:text-light-primary">Our Team</a></li>
+            <li><a href="../gallery/Gallery.html" class="hover:text-light-primary">Gallery</a></li>
+            <li><a href="../contact-us/ContactUs.html" class="hover:text-light-primary">Contact Us</a></li>
+            <li><a href="../book-appointment/BookAppointment.html" class="hover:text-light-primary">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-label text-label-lg text-light-primary mb-3" data-design-text-token="label-lg">Our Services</h3>
+          <ul class="flex flex-col gap-2 font-body text-body-sm text-light-on-surface-variant">
+            <li><a href="../services/Services.html" class="hover:text-light-primary">Bridal &amp; Party Makeup</a></li>
+            <li><a href="../services/Services.html" class="hover:text-light-primary">Skin Care &amp; Facials</a></li>
+            <li><a href="../services/Services.html" class="hover:text-light-primary">Hair Styling &amp; Hair Spa</a></li>
+            <li><a href="../services/Services.html" class="hover:text-light-primary">Manicure, Pedicure &amp; Nail Art</a></li>
+            <li><a href="../packages/PackagesPricing.html" class="hover:text-light-primary">Special Packages</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-label text-label-lg text-light-primary mb-3" data-design-text-token="label-lg">Visit &amp; Hours</h3>
+          <ul class="flex flex-col gap-2 font-body text-body-sm text-light-on-surface-variant">
+            <li>14, Lotus Enclave, C.G. Road, Navrangpura (Sample Address)</li>
+            <li class="tabular-nums">+91 98765 43210 (Sample Phone)</li>
+            <li>hello@shreejiparlour.in (Sample Email)</li>
+            <li class="pt-1 text-light-primary font-medium">Tue – Sun: 10:00 AM – 8:00 PM</li>
+            <li>Monday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-light-outline-variant py-5 text-center font-body text-body-sm text-light-on-surface-variant">
+        © 2026 Shreeji Parlour. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('mobile-menu-btn');
+      var menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', function () {
+          var isHidden = menu.classList.contains('hidden');
+          menu.classList.toggle('hidden');
+          btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        });
+      }
+
+      var chips = document.querySelectorAll('.filter-chip');
+      var cards = document.querySelectorAll('.service-card');
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var filter = chip.getAttribute('data-filter');
+          chips.forEach(function (c) {
+            c.setAttribute('aria-pressed', 'false');
+            c.classList.remove('bg-light-primary', 'text-light-on-primary');
+            c.classList.add('border', 'border-light-outline-variant', 'bg-light-surface-container-lowest', 'text-light-on-surface');
+          });
+          chip.setAttribute('aria-pressed', 'true');
+          chip.classList.add('bg-light-primary', 'text-light-on-primary');
+          chip.classList.remove('border', 'border-light-outline-variant', 'bg-light-surface-container-lowest', 'text-light-on-surface');
+
+          cards.forEach(function (card) {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>

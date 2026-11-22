@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply bg-light-surface text-light-on-surface font-body antialiased selection:bg-blush-tint selection:text-light-primary;
+  }
+
+  /* Accessible focus states */
+  :focus-visible {
+    outline: 2px solid #431830;
+    outline-offset: 2px;
+  }
+}
+
+/* Material Symbols styling */
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp,
+.material-icons {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
