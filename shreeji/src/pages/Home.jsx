@@ -382,7 +382,7 @@ export default function Home() {
         ref={heroSectionRef}
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={handleHeroMouseLeave}
-        className="relative overflow-hidden bg-gradient-to-b from-light-surface-container-low via-light-surface to-light-surface-container-low/70 py-12 lg:py-20 select-none"
+        className="relative overflow-hidden bg-gradient-to-b from-light-surface-container-low via-light-surface to-light-surface-container-low/70 py-16 lg:py-20 select-none"
       >
         {/* Ambient Glowing Aura Orbs */}
         <div

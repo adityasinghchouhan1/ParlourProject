@@ -17,7 +17,7 @@ export default function Packages() {
       gsap.from('.pkg-header-elem', {
         opacity: 0,
         y: 20,
-        duration: 0.8,
+        duration: 0.3,
         stagger: 0.15,
         ease: 'power3.out',
         scrollTrigger: {
