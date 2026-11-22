@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { salonInfo } from '../../data/salonInfo';
+import React, { useState, useEffect } from 'react'
+import { NavLink, Link, useLocation } from 'react-router-dom'
+import { Menu, X } from 'lucide-react'
+import { salonInfo } from '../../data/salonInfo'
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -9,25 +9,28 @@ const navLinks = [
   { name: 'Services', path: '/services' },
   { name: 'Packages', path: '/packages' },
   { name: 'Gallery', path: '/gallery' },
-  { name: 'Our Team', path: '/team' },
+  // { name: 'Our Team', path: '/team' },
   { name: 'Contact', path: '/contact' },
-];
+]
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
 
   // Close mobile menu on route change
   useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
+    setIsOpen(false)
+  }, [location.pathname])
 
   return (
     <header className="sticky top-0 z-40 border-b border-light-outline-variant bg-light-surface-container-lowest/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-gutter-md py-4 md:px-gutter-lg">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="material-symbols-outlined text-[26px] text-rose-gold transition-transform duration-300 group-hover:rotate-12" aria-hidden="true">
+          <span
+            className="material-symbols-outlined text-[26px] text-rose-gold transition-transform duration-300 group-hover:rotate-12"
+            aria-hidden="true"
+          >
             spa
           </span>
           <span className="font-headline text-headline-sm text-light-primary">
@@ -36,7 +39,10 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav aria-label="Primary Navigation" className="hidden lg:flex items-center gap-7">
+        <nav
+          aria-label="Primary Navigation"
+          className="hidden lg:flex items-center gap-7"
+        >
           {navLinks.map((item) => (
             <NavLink
               key={item.path}
@@ -66,7 +72,9 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              isOpen ? 'Close navigation menu' : 'Open navigation menu'
+            }
             aria-expanded={isOpen}
             className="inline-flex lg:hidden h-10 w-10 items-center justify-center rounded-full border border-light-outline-variant bg-light-surface-container-lowest text-light-on-surface hover:bg-blush-tint transition-colors"
           >
@@ -85,7 +93,9 @@ export default function Navbar() {
                 to={item.path}
                 className={({ isActive }) =>
                   `font-label text-label-lg py-1.5 transition-colors ${
-                    isActive ? 'text-light-primary font-semibold' : 'text-light-on-surface-variant hover:text-light-primary'
+                    isActive
+                      ? 'text-light-primary font-semibold'
+                      : 'text-light-on-surface-variant hover:text-light-primary'
                   }`
                 }
               >
@@ -102,5 +112,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  );
+  )
 }
