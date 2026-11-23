@@ -40,7 +40,7 @@ export default function Packages() {
             opacity: 1,
             y: 0,
             scale: 1,
-            duration: 0.3,
+            duration: 0.2,
             ease: 'power3.out',
             delay: (index % 4) * 0.12,
             scrollTrigger: {
@@ -63,7 +63,7 @@ export default function Packages() {
             ease: 'power2.out',
             scrollTrigger: {
               trigger: image,
-              start: 'top 50%',
+              start: 'top 80%',
               toggleActions: 'play none none reverse',
             },
           },
