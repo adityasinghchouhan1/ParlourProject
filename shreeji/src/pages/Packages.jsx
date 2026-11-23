@@ -22,7 +22,7 @@ export default function Packages() {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.pkg-header',
-          start: 'top 30%',
+          start: 'top 80%',
           toggleActions: 'play none none reverse',
         },
       })
