@@ -17,12 +17,12 @@ export default function Packages() {
       gsap.from('.pkg-header-elem', {
         opacity: 0,
         y: 20,
-        duration: 0.3,
-        stagger: 0.15,
+        duration: 0.2,
+        stagger: 0.1,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.pkg-header',
-          start: 'top 85%',
+          start: 'top 20%',
           toggleActions: 'play none none reverse',
         },
       })
@@ -40,12 +40,12 @@ export default function Packages() {
             opacity: 1,
             y: 0,
             scale: 1,
-            duration: 0.9,
+            duration: 0.3,
             ease: 'power3.out',
             delay: (index % 4) * 0.12,
             scrollTrigger: {
               trigger: card,
-              start: 'top 88%',
+              start: 'top 30%',
               toggleActions: 'play none none reverse',
             },
           },
