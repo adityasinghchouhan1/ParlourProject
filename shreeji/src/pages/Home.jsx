@@ -14,6 +14,7 @@ import heroImage from '../assets/images/HeroImg.jpg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Homepackages from '../components/Homecommon/Homepackages'
 import Homegallery from '../components/Homecommon/Homegallery'
+import HomeVisitServices from '../components/Homecommon/HomeVisitServices'
 
 export default function Home() {
   const containerRef = useRef(null)
@@ -741,7 +742,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <HomeVisitServices />
       {/* Popular Services (Curated Menu) */}
       <section className="bg-light-surface-container-low py-section-sm lg:py-section-lg">
         <div className="mx-auto max-w-7xl px-gutter-md md:px-gutter-lg">
