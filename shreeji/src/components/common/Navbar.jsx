@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { salonInfo } from '../../data/salonInfo'
-
+import logo from '../../assets/images/logo.png'
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
@@ -24,15 +24,20 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-light-outline-variant bg-light-surface-container-lowest/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-gutter-md py-4 md:px-gutter-lg">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-gutter-md md:px-gutter-lg">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-2.5 group">
-          <span
+          {/* <span
             className="material-symbols-outlined text-[26px] text-rose-gold transition-transform duration-300 group-hover:rotate-12"
             aria-hidden="true"
           >
             spa
-          </span>
+          </span> */}
+          <img
+            src={logo}
+            alt={salonInfo.name}
+            className="object-contain h-20 w-20"
+          />
           <span className="font-headline text-headline-sm text-light-primary">
             {salonInfo.name}
           </span>

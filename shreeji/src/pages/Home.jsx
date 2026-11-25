@@ -429,7 +429,7 @@ export default function Home() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-gold" />
               </span>
               <span className="font-label text-label-sm font-semibold tracking-widest uppercase text-light-secondary">
-                Luxury Beauty Atelier • Ahmedabad
+                Luxury Beauty Atelier • BHOPAL
               </span>
               <span
                 className="material-symbols-outlined text-[16px] text-rose-gold"
@@ -441,10 +441,9 @@ export default function Home() {
 
             {/* Editorial Display Heading */}
             <h1 className="hero-title font-display text-display-lg-mobile sm:text-[44px] lg:text-[54px] font-semibold text-light-primary text-balance leading-[1.12] tracking-tight">
-              Your Natural Beauty, <br />
-              Our{' '}
+              Celebrity Makeup Artist..{'  '}
               <span className="relative inline-block font-normal italic text-rose-gold">
-                Artistry &amp; Passion
+                Isha Thakur♡
                 <svg
                   className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-rose-gold/50"
                   viewBox="0 0 250 12"
@@ -464,9 +463,10 @@ export default function Home() {
 
             {/* Sophisticated Body Paragraph */}
             <p className="hero-desc max-w-prose font-body text-body-lg text-light-on-surface-variant text-pretty leading-relaxed">
-              Step into a serene women-only sanctuary where timeless bridal
-              craftsmanship, clinical-grade skincare, and bespoke self-care
-              rituals bring forth your most radiant, confident self.
+              Owner of Shreeji parlour. Step into a serene women-only sanctuary
+              where timeless bridal craftsmanship, clinical-grade skincare, and
+              bespoke self-care rituals bring forth your most radiant, confident
+              self.
             </p>
 
             {/* High-Converting CTA Buttons */}
