@@ -342,7 +342,7 @@ export default function About() {
             </span>
 
             <h2 className="mt-3 font-headline text-headline-lg-mobile lg:text-headline-lg text-light-primary text-balance">
-              Our Story
+              My journey
               <span className="mt-3 block h-1 w-16 rounded-full bg-rose-gold" />
             </h2>
           </div>
