@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import banner from '../assets/images/Banner2.jpg'
 import banner2 from '../assets/images/banner3.jpeg'
+import IshaRecognition from '../components/Homecommon/IshaRecognition'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -364,7 +365,7 @@ export default function About() {
           </div>
         </div>
       </section>
-
+      <IshaRecognition />
       {/* ==================================================
           MISSION & VISION - PREMIUM PARALLAX SECTION
       ================================================== */}
