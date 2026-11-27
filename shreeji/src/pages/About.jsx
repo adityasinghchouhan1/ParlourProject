@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { gsap, prefersReducedMotion } from '../components/animations/gsapSetup'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import banner from '../assets/images/Banner2.jpg'
+import banner from '../assets/images/isha/i3.jpeg'
 import banner2 from '../assets/images/banner3.jpeg'
 import IshaRecognition from '../components/Homecommon/IshaRecognition'
 
@@ -277,21 +277,21 @@ export default function About() {
           {/* Hero Text */}
           <div className="lg:col-span-6 flex flex-col gap-5">
             <span className="about-hero-eyebrow inline-flex w-fit items-center gap-2 rounded-full border border-rose-gold/30 bg-light-surface-container-lowest/80 px-4 py-2 font-label text-label-sm font-semibold uppercase tracking-widest text-light-secondary backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-rose-gold" />
-              Our Brand Story
+              <span className="h-2 w-2 rounded-full bg-rose-gold" />A true
+              Makeup artist Story
             </span>
 
             <h1 className="about-hero-title font-display text-display-md-mobile lg:text-display-md font-semibold leading-tight text-light-primary text-balance">
-              Beauty Begins With{' '}
+              beautiful journey to become a{' '}
               <span className="font-normal italic text-rose-gold">
-                Confidence
+                celebrity makeup artist
               </span>
             </h1>
 
             <p className="about-hero-desc max-w-prose font-body text-body-lg text-light-on-surface-variant text-pretty leading-relaxed">
-              Shreeji Parlour was created as a calm, welcoming retreat where
-              women can step away from daily rush and experience thoughtful
-              beauty care tailored to their individuality.
+              Becoming a celebrity makeup artist is a creative journey that
+              turns a passion for color, skin, and storytelling into
+              high-pressure red-carpet, editorial, and film work.
             </p>
 
             <div className="about-hero-desc flex items-center gap-3 pt-2">

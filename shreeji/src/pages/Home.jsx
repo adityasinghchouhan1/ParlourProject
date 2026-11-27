@@ -443,7 +443,7 @@ export default function Home() {
             <h1 className="hero-title font-display text-display-lg-mobile sm:text-[44px] lg:text-[54px] font-semibold text-light-primary text-balance leading-[1.12] tracking-tight">
               Celebrity Makeup Artist..{'  '}
               <span className="relative inline-block font-normal italic text-rose-gold">
-                Isha Thakur♡
+                Isha Detwal♡
                 <svg
                   className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-rose-gold/50"
                   viewBox="0 0 250 12"
